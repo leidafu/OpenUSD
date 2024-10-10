@@ -1,4 +1,7 @@
 .p4*
 .DS_Store
 .AppleDouble
-
+.filters
+.vs
+CMakeFiles
+*.vcxproj.filters
