@@ -20,3 +20,5 @@ __init__.pyc
 __pycache__/
 *.gch
 CMakeCache.txt
+*.log
+*.vcxproj.FileListAbsolute.txt
