@@ -188,10 +188,10 @@
                     }
                 }
             }, 
-            "LibraryPath": "@PLUG_INFO_LIBRARY_PATH@", 
+            "LibraryPath": "../../usd_usdPhysics.dll", 
             "Name": "usdPhysics", 
-            "ResourcePath": "@PLUG_INFO_RESOURCE_PATH@", 
-            "Root": "@PLUG_INFO_ROOT@", 
+            "ResourcePath": "resources", 
+            "Root": "..", 
             "Type": "library"
         }
     ]

@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD7CAA51-7843-3BC7-8D04-4C9362902FE0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>hdsi_headerfiles</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\hdsi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\hdsi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\hdsi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\hdsi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\api.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying api.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/api.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/api.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\api.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying api.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/api.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/api.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\api.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying api.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/api.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/api.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\api.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying api.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/api.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/api.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\api.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\coordSysPrimSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying coordSysPrimSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/coordSysPrimSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/coordSysPrimSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\coordSysPrimSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying coordSysPrimSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/coordSysPrimSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/coordSysPrimSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\coordSysPrimSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying coordSysPrimSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/coordSysPrimSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/coordSysPrimSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\coordSysPrimSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying coordSysPrimSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/coordSysPrimSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/coordSysPrimSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\coordSysPrimSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying extComputationPrimvarPruningSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/extComputationPrimvarPruningSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/extComputationPrimvarPruningSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying extComputationPrimvarPruningSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/extComputationPrimvarPruningSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/extComputationPrimvarPruningSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying extComputationPrimvarPruningSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/extComputationPrimvarPruningSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/extComputationPrimvarPruningSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying extComputationPrimvarPruningSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/extComputationPrimvarPruningSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/extComputationPrimvarPruningSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying implicitSurfaceSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/implicitSurfaceSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/implicitSurfaceSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying implicitSurfaceSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/implicitSurfaceSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/implicitSurfaceSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying implicitSurfaceSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/implicitSurfaceSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/implicitSurfaceSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying implicitSurfaceSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/implicitSurfaceSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/implicitSurfaceSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying legacyDisplayStyleOverrideSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/legacyDisplayStyleOverrideSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/legacyDisplayStyleOverrideSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying legacyDisplayStyleOverrideSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/legacyDisplayStyleOverrideSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/legacyDisplayStyleOverrideSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying legacyDisplayStyleOverrideSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/legacyDisplayStyleOverrideSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/legacyDisplayStyleOverrideSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying legacyDisplayStyleOverrideSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/legacyDisplayStyleOverrideSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/legacyDisplayStyleOverrideSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\lightLinkingSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying lightLinkingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/lightLinkingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/lightLinkingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\lightLinkingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying lightLinkingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/lightLinkingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/lightLinkingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\lightLinkingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying lightLinkingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/lightLinkingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/lightLinkingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\lightLinkingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying lightLinkingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/lightLinkingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/lightLinkingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\lightLinkingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying materialBindingResolvingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/materialBindingResolvingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/materialBindingResolvingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying materialBindingResolvingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/materialBindingResolvingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/materialBindingResolvingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying materialBindingResolvingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/materialBindingResolvingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/materialBindingResolvingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying materialBindingResolvingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/materialBindingResolvingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/materialBindingResolvingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying materialPrimvarTransferSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/materialPrimvarTransferSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/materialPrimvarTransferSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying materialPrimvarTransferSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/materialPrimvarTransferSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/materialPrimvarTransferSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying materialPrimvarTransferSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/materialPrimvarTransferSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/materialPrimvarTransferSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying materialPrimvarTransferSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/materialPrimvarTransferSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/materialPrimvarTransferSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying nurbsApproximatingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/nurbsApproximatingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/nurbsApproximatingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying nurbsApproximatingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/nurbsApproximatingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/nurbsApproximatingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying nurbsApproximatingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/nurbsApproximatingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/nurbsApproximatingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying nurbsApproximatingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/nurbsApproximatingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/nurbsApproximatingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying pinnedCurveExpandingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/pinnedCurveExpandingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/pinnedCurveExpandingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying pinnedCurveExpandingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/pinnedCurveExpandingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/pinnedCurveExpandingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying pinnedCurveExpandingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/pinnedCurveExpandingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/pinnedCurveExpandingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying pinnedCurveExpandingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/pinnedCurveExpandingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/pinnedCurveExpandingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\primManagingSceneIndexObserver.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying primManagingSceneIndexObserver.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primManagingSceneIndexObserver.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primManagingSceneIndexObserver.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primManagingSceneIndexObserver.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying primManagingSceneIndexObserver.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primManagingSceneIndexObserver.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primManagingSceneIndexObserver.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primManagingSceneIndexObserver.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying primManagingSceneIndexObserver.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primManagingSceneIndexObserver.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primManagingSceneIndexObserver.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primManagingSceneIndexObserver.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying primManagingSceneIndexObserver.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primManagingSceneIndexObserver.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primManagingSceneIndexObserver.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primManagingSceneIndexObserver.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying primTypeNoticeBatchingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primTypeNoticeBatchingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primTypeNoticeBatchingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying primTypeNoticeBatchingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primTypeNoticeBatchingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primTypeNoticeBatchingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying primTypeNoticeBatchingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primTypeNoticeBatchingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primTypeNoticeBatchingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying primTypeNoticeBatchingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primTypeNoticeBatchingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primTypeNoticeBatchingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\primTypePruningSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying primTypePruningSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primTypePruningSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primTypePruningSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypePruningSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying primTypePruningSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primTypePruningSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primTypePruningSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypePruningSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying primTypePruningSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primTypePruningSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primTypePruningSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypePruningSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying primTypePruningSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/primTypePruningSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/primTypePruningSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypePruningSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying renderSettingsFilteringSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/renderSettingsFilteringSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/renderSettingsFilteringSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying renderSettingsFilteringSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/renderSettingsFilteringSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/renderSettingsFilteringSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying renderSettingsFilteringSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/renderSettingsFilteringSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/renderSettingsFilteringSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying renderSettingsFilteringSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/renderSettingsFilteringSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/renderSettingsFilteringSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying sceneGlobalsSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/sceneGlobalsSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/sceneGlobalsSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying sceneGlobalsSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/sceneGlobalsSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/sceneGlobalsSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying sceneGlobalsSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/sceneGlobalsSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/sceneGlobalsSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying sceneGlobalsSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/sceneGlobalsSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/sceneGlobalsSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying tetMeshConversionSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/tetMeshConversionSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/tetMeshConversionSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying tetMeshConversionSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/tetMeshConversionSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/tetMeshConversionSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying tetMeshConversionSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/tetMeshConversionSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/tetMeshConversionSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying tetMeshConversionSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/tetMeshConversionSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/tetMeshConversionSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\utils.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying utils.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/utils.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/utils.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\utils.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying utils.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/utils.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/utils.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\utils.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying utils.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/utils.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/utils.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\utils.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying utils.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/utils.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/utils.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\utils.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying velocityMotionResolvingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/velocityMotionResolvingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/velocityMotionResolvingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying velocityMotionResolvingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/velocityMotionResolvingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/velocityMotionResolvingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying velocityMotionResolvingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/velocityMotionResolvingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/velocityMotionResolvingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying velocityMotionResolvingSceneIndex.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/velocityMotionResolvingSceneIndex.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/velocityMotionResolvingSceneIndex.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\version.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying version.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/version.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/version.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\version.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying version.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/version.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/version.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\version.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying version.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/version.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/version.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\version.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying version.h ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/work/OpenUSD/include/pxr/imaging/hdsi
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dinfile=D:/work/OpenUSD/pxr/imaging/hdsi/version.h -Doutfile=D:/work/OpenUSD//include/pxr/imaging/hdsi/version.h -P D:/work/OpenUSD/cmake/macros/copyHeaderForBuild.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\version.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\782a6b4d99a792813013575b4c8cff88\hdsi_headerfiles.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\api.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\version.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\coordSysPrimSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\lightLinkingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primManagingSceneIndexObserver.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypePruningSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\utils.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\hdsi_headerfiles</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\api.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\version.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\coordSysPrimSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\lightLinkingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primManagingSceneIndexObserver.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypePruningSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\utils.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\hdsi_headerfiles</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\api.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\version.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\coordSysPrimSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\lightLinkingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primManagingSceneIndexObserver.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypePruningSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\utils.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\hdsi_headerfiles</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hdsi\api.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\version.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\coordSysPrimSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\extComputationPrimvarPruningSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\implicitSurfaceSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\legacyDisplayStyleOverrideSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\lightLinkingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\materialBindingResolvingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\materialPrimvarTransferSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\nurbsApproximatingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\pinnedCurveExpandingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primManagingSceneIndexObserver.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypeNoticeBatchingSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\primTypePruningSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\renderSettingsFilteringSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\sceneGlobalsSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\tetMeshConversionSceneIndex.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\utils.h;D:\work\OpenUSD\include\pxr\imaging\hdsi\velocityMotionResolvingSceneIndex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\hdsi_headerfiles</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\hdsi\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/OpenUSD/pxr/imaging/hdsi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/imaging/hdsi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/OpenUSD/pxr/imaging/hdsi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/imaging/hdsi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/OpenUSD/pxr/imaging/hdsi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/imaging/hdsi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/OpenUSD/pxr/imaging/hdsi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/imaging/hdsi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\work\OpenUSD\pxr\imaging\hdsi\CMakeFiles\hdsi_headerfiles">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\OpenUSD\ZERO_CHECK.vcxproj">
+      <Project>{21BAA334-A16E-3B3B-BF20-00913A618B9B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC3A3BCA-7C1F-3F46-B727-57C742CD7149}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>python</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/OpenUSD/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.29\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeCCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeCXXCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeRCCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeSystem.cmake;D:\work\OpenUSD\cmake\defaults\CXXDefaults.cmake;D:\work\OpenUSD\cmake\defaults\CXXHelpers.cmake;D:\work\OpenUSD\cmake\defaults\Options.cmake;D:\work\OpenUSD\cmake\defaults\Packages.cmake;D:\work\OpenUSD\cmake\defaults\ProjectDefaults.cmake;D:\work\OpenUSD\cmake\defaults\Version.cmake;D:\work\OpenUSD\cmake\defaults\msvcdefaults.cmake;D:\work\OpenUSD\cmake\macros\Private.cmake;D:\work\OpenUSD\cmake\macros\Public.cmake;D:\work\OpenUSD\cmake\modules\FindJinja2.cmake;D:\work\OpenUSD\cmake\modules\FindOpenSubdiv.cmake;D:\work\OpenUSD\cmake\modules\FindPyOpenGL.cmake;D:\work\OpenUSD\cmake\modules\FindPySide.cmake;D:\work\OpenUSD\cmake\modules\FindTBB.cmake;D:\work\OpenUSD\pxr\pxr.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/OpenUSD/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.29\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeCCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeCXXCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeRCCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeSystem.cmake;D:\work\OpenUSD\cmake\defaults\CXXDefaults.cmake;D:\work\OpenUSD\cmake\defaults\CXXHelpers.cmake;D:\work\OpenUSD\cmake\defaults\Options.cmake;D:\work\OpenUSD\cmake\defaults\Packages.cmake;D:\work\OpenUSD\cmake\defaults\ProjectDefaults.cmake;D:\work\OpenUSD\cmake\defaults\Version.cmake;D:\work\OpenUSD\cmake\defaults\msvcdefaults.cmake;D:\work\OpenUSD\cmake\macros\Private.cmake;D:\work\OpenUSD\cmake\macros\Public.cmake;D:\work\OpenUSD\cmake\modules\FindJinja2.cmake;D:\work\OpenUSD\cmake\modules\FindOpenSubdiv.cmake;D:\work\OpenUSD\cmake\modules\FindPyOpenGL.cmake;D:\work\OpenUSD\cmake\modules\FindPySide.cmake;D:\work\OpenUSD\cmake\modules\FindTBB.cmake;D:\work\OpenUSD\pxr\pxr.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/OpenUSD/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.29\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeCCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeCXXCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeRCCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeSystem.cmake;D:\work\OpenUSD\cmake\defaults\CXXDefaults.cmake;D:\work\OpenUSD\cmake\defaults\CXXHelpers.cmake;D:\work\OpenUSD\cmake\defaults\Options.cmake;D:\work\OpenUSD\cmake\defaults\Packages.cmake;D:\work\OpenUSD\cmake\defaults\ProjectDefaults.cmake;D:\work\OpenUSD\cmake\defaults\Version.cmake;D:\work\OpenUSD\cmake\defaults\msvcdefaults.cmake;D:\work\OpenUSD\cmake\macros\Private.cmake;D:\work\OpenUSD\cmake\macros\Public.cmake;D:\work\OpenUSD\cmake\modules\FindJinja2.cmake;D:\work\OpenUSD\cmake\modules\FindOpenSubdiv.cmake;D:\work\OpenUSD\cmake\modules\FindPyOpenGL.cmake;D:\work\OpenUSD\cmake\modules\FindPySide.cmake;D:\work\OpenUSD\cmake\modules\FindTBB.cmake;D:\work\OpenUSD\pxr\pxr.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/OpenUSD/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.29\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPython3.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeCCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeCXXCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeRCCompiler.cmake;D:\work\OpenUSD\CMakeFiles\3.29.0-rc3\CMakeSystem.cmake;D:\work\OpenUSD\cmake\defaults\CXXDefaults.cmake;D:\work\OpenUSD\cmake\defaults\CXXHelpers.cmake;D:\work\OpenUSD\cmake\defaults\Options.cmake;D:\work\OpenUSD\cmake\defaults\Packages.cmake;D:\work\OpenUSD\cmake\defaults\ProjectDefaults.cmake;D:\work\OpenUSD\cmake\defaults\Version.cmake;D:\work\OpenUSD\cmake\defaults\msvcdefaults.cmake;D:\work\OpenUSD\cmake\macros\Private.cmake;D:\work\OpenUSD\cmake\macros\Public.cmake;D:\work\OpenUSD\cmake\modules\FindJinja2.cmake;D:\work\OpenUSD\cmake\modules\FindOpenSubdiv.cmake;D:\work\OpenUSD\cmake\modules\FindPyOpenGL.cmake;D:\work\OpenUSD\cmake\modules\FindPySide.cmake;D:\work\OpenUSD\cmake\modules\FindTBB.cmake;D:\work\OpenUSD\pxr\pxr.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\OpenUSD\ZERO_CHECK.vcxproj">
+      <Project>{21BAA334-A16E-3B3B-BF20-00913A618B9B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\ar\_ar.vcxproj">
+      <Project>{F3AB5E56-A95E-35FD-9FE2-D00D6F2006A0}</Project>
+      <Name>_ar</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\ar\_ar_pythonfiles.vcxproj">
+      <Project>{9D9434A9-AA99-368A-B0B9-F2A208251A8E}</Project>
+      <Name>_ar_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\cameraUtil\_cameraUtil.vcxproj">
+      <Project>{90C2451C-0EEE-34DC-82A4-8E1972638AEA}</Project>
+      <Name>_cameraUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\cameraUtil\_cameraUtil_pythonfiles.vcxproj">
+      <Project>{7E4376DB-CDA9-3C2C-A8A3-09EA80582367}</Project>
+      <Name>_cameraUtil_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\garch\_garch.vcxproj">
+      <Project>{5F6BFE85-44E5-3C21-8C6B-ABBD4984BD2F}</Project>
+      <Name>_garch</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\garch\_garch_pythonfiles.vcxproj">
+      <Project>{E050CEA1-8C92-3DC6-8BAD-ECE39AFB1978}</Project>
+      <Name>_garch_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\geomUtil\_geomUtil.vcxproj">
+      <Project>{8C6596E7-8FEC-337C-9184-9700D4FE2D0B}</Project>
+      <Name>_geomUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\geomUtil\_geomUtil_pythonfiles.vcxproj">
+      <Project>{C1242C5D-D0A8-39C7-85C1-9C3F844D1435}</Project>
+      <Name>_geomUtil_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\gf\_gf.vcxproj">
+      <Project>{B502F616-3C3E-32C2-8D85-97104A1EA3C7}</Project>
+      <Name>_gf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\gf\_gf_pythonfiles.vcxproj">
+      <Project>{6D585853-983F-30C5-A30B-AB9CE335188E}</Project>
+      <Name>_gf_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\glf\_glf.vcxproj">
+      <Project>{BC795FC7-24E5-3DD5-A127-930E9BC0AEEA}</Project>
+      <Name>_glf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\glf\_glf_pythonfiles.vcxproj">
+      <Project>{4EB03B11-3526-37AC-AC22-22116F4C1D7E}</Project>
+      <Name>_glf_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\kind\_kind.vcxproj">
+      <Project>{B5FCEEDF-FD53-39AD-B59A-6E3D43EA03B7}</Project>
+      <Name>_kind</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\kind\_kind_pythonfiles.vcxproj">
+      <Project>{644B953A-B84B-31EA-B598-C629EBEAE942}</Project>
+      <Name>_kind_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\ndr\_ndr.vcxproj">
+      <Project>{D22DFAA5-9C24-3206-BE44-8EC5B911ED94}</Project>
+      <Name>_ndr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\ndr\_ndr_pythonfiles.vcxproj">
+      <Project>{8B317FC9-7C9B-3201-8DA2-026D14CA0427}</Project>
+      <Name>_ndr_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\pcp\_pcp.vcxproj">
+      <Project>{D57DDE74-B0F3-3432-BDC7-E2993C3A7CF1}</Project>
+      <Name>_pcp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\pcp\_pcp_pythonfiles.vcxproj">
+      <Project>{7CE9EE7B-29A2-35CE-B226-C6D4A6E04EE9}</Project>
+      <Name>_pcp_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\plug\_plug.vcxproj">
+      <Project>{C13E9263-130E-3C8A-ACD7-DFB7B8CD712E}</Project>
+      <Name>_plug</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\plug\_plug_pythonfiles.vcxproj">
+      <Project>{A39013B1-6522-3804-9101-6A687CED70AA}</Project>
+      <Name>_plug_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\pxOsd\_pxOsd.vcxproj">
+      <Project>{AB32E139-673B-3EA8-8819-6D6713EB4717}</Project>
+      <Name>_pxOsd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\pxOsd\_pxOsd_pythonfiles.vcxproj">
+      <Project>{622C5F37-EC71-3154-9558-7E42EE4701E5}</Project>
+      <Name>_pxOsd_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\sdf\_sdf.vcxproj">
+      <Project>{F5395D42-150E-3765-BE33-9CCDC7341EF3}</Project>
+      <Name>_sdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\sdf\_sdf_pythonfiles.vcxproj">
+      <Project>{22EDA1E3-3C6E-3B6E-9F45-12992657A4D8}</Project>
+      <Name>_sdf_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\sdr\_sdr.vcxproj">
+      <Project>{31C14768-72FB-3719-AB6C-584109F31DD2}</Project>
+      <Name>_sdr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\plugin\sdrGlslfx\_sdrGlslfx_pythonfiles.vcxproj">
+      <Project>{10324426-A74F-3324-83D0-F2E2F0BC56C5}</Project>
+      <Name>_sdrGlslfx_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\sdr\_sdr_pythonfiles.vcxproj">
+      <Project>{74FE991A-326F-3D19-95D6-D1AE0FDC416C}</Project>
+      <Name>_sdr_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\tf\_tf.vcxproj">
+      <Project>{C8414CF7-C9B5-35F7-AF39-95CFE7ADD05F}</Project>
+      <Name>_tf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\tf\_tf_pythonfiles.vcxproj">
+      <Project>{1721EFE4-A0F4-38F1-9AA6-CC9B1748143D}</Project>
+      <Name>_tf_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\trace\_trace.vcxproj">
+      <Project>{6A36415D-5D41-3D32-8C99-B14E1DF58397}</Project>
+      <Name>_trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\trace\_trace_pythonfiles.vcxproj">
+      <Project>{CC74537B-203B-386D-B784-D7532BA13221}</Project>
+      <Name>_trace_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\ts\_ts.vcxproj">
+      <Project>{780D996A-1DEC-390B-9710-78A81CE690FB}</Project>
+      <Name>_ts</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\ts\_ts_pythonfiles.vcxproj">
+      <Project>{4EAE579D-3309-33C1-AD09-93EB0D2DCD33}</Project>
+      <Name>_ts_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usd\_usd.vcxproj">
+      <Project>{09B67B65-579A-3DF3-A821-75EA04C8B54A}</Project>
+      <Name>_usd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\usdAppUtils\_usdAppUtils.vcxproj">
+      <Project>{29C07AD1-8430-3D4D-AFDB-C98ECB8DF361}</Project>
+      <Name>_usdAppUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\usdAppUtils\_usdAppUtils_pythonfiles.vcxproj">
+      <Project>{376BE974-0A30-3C4E-AAA1-C8C0E5EB39C4}</Project>
+      <Name>_usdAppUtils_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdGeom\_usdGeom.vcxproj">
+      <Project>{7BEE0716-707F-3B60-AE95-7B053BDD18AC}</Project>
+      <Name>_usdGeom</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdGeom\_usdGeom_pythonfiles.vcxproj">
+      <Project>{9ACA6923-5E9F-3CAE-9663-FF246D78EE50}</Project>
+      <Name>_usdGeom_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdHydra\_usdHydra.vcxproj">
+      <Project>{780F5ADC-C6CE-3C0F-926C-7EB28959771D}</Project>
+      <Name>_usdHydra</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdHydra\_usdHydra_pythonfiles.vcxproj">
+      <Project>{8BB3AEAE-460D-3E10-BC6C-41F19EC07B80}</Project>
+      <Name>_usdHydra_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\usdImagingGL\_usdImagingGL.vcxproj">
+      <Project>{FE762DF0-78F9-333C-9BE6-7821CD608B73}</Project>
+      <Name>_usdImagingGL</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\usdImagingGL\_usdImagingGL_pythonfiles.vcxproj">
+      <Project>{5B8F0FFE-942F-3555-8727-7DBC23935D78}</Project>
+      <Name>_usdImagingGL_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdLux\_usdLux.vcxproj">
+      <Project>{4C555B20-257A-3759-BC11-2417805355D5}</Project>
+      <Name>_usdLux</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdLux\_usdLux_pythonfiles.vcxproj">
+      <Project>{0485BC56-3C80-3C7B-835C-F721C591C0D6}</Project>
+      <Name>_usdLux_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdMedia\_usdMedia.vcxproj">
+      <Project>{8F07888F-ECDF-3D4A-85CB-65EA85BAD171}</Project>
+      <Name>_usdMedia</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdMedia\_usdMedia_pythonfiles.vcxproj">
+      <Project>{575A359C-8BF6-36F9-B8AB-ADF02F0F1309}</Project>
+      <Name>_usdMedia_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdPhysics\_usdPhysics.vcxproj">
+      <Project>{538AFFB5-49F5-3234-8891-7190DF2E923F}</Project>
+      <Name>_usdPhysics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdPhysics\_usdPhysics_pythonfiles.vcxproj">
+      <Project>{C0C6D596-0BDD-3C2C-8ADC-64CAA2C71BDB}</Project>
+      <Name>_usdPhysics_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdProc\_usdProc.vcxproj">
+      <Project>{7A0AE141-A311-36B7-9303-18FCBB8785F5}</Project>
+      <Name>_usdProc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdProc\_usdProc_pythonfiles.vcxproj">
+      <Project>{2F5610C8-E7FA-3B93-9ED7-F5F81A7ED300}</Project>
+      <Name>_usdProc_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdRender\_usdRender.vcxproj">
+      <Project>{D2AEFC88-1B4B-37B9-B187-78488BDE480B}</Project>
+      <Name>_usdRender</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdRender\_usdRender_pythonfiles.vcxproj">
+      <Project>{D0E6BD40-40E6-32DB-BEAD-277A0C188CA2}</Project>
+      <Name>_usdRender_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\extras\usd\examples\usdResolverExample\_usdResolverExample.vcxproj">
+      <Project>{9178CE2C-3DE2-3F77-8F78-39FBDBA18506}</Project>
+      <Name>_usdResolverExample</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\extras\usd\examples\usdResolverExample\_usdResolverExample_pythonfiles.vcxproj">
+      <Project>{78EF87E2-429E-3AFB-A085-9F48A4F800AE}</Project>
+      <Name>_usdResolverExample_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdRi\_usdRi.vcxproj">
+      <Project>{44E6D012-85BC-3530-9581-E934CA4D9F32}</Project>
+      <Name>_usdRi</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdRi\_usdRi_pythonfiles.vcxproj">
+      <Project>{EC529827-B42E-3164-94A8-B2233AB1516F}</Project>
+      <Name>_usdRi_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\extras\usd\examples\usdSchemaExamples\_usdSchemaExamples.vcxproj">
+      <Project>{F6D3CEF8-86DD-3093-8EC4-DC1AA19EEED6}</Project>
+      <Name>_usdSchemaExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\extras\usd\examples\usdSchemaExamples\_usdSchemaExamples_pythonfiles.vcxproj">
+      <Project>{473DFEF0-3129-37B8-8DDF-3EBB4CD936F6}</Project>
+      <Name>_usdSchemaExamples_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdShade\_usdShade.vcxproj">
+      <Project>{5C95DDB7-593F-3D5D-AE4F-03B9815432F0}</Project>
+      <Name>_usdShade</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdShade\_usdShade_pythonfiles.vcxproj">
+      <Project>{F6BB55EE-B5B7-3792-B4CD-877DA65A70BF}</Project>
+      <Name>_usdShade_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\plugin\usdShaders\_usdShaders_pythonfiles.vcxproj">
+      <Project>{EB968810-0E28-334C-912A-9245E78EA2B3}</Project>
+      <Name>_usdShaders_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdSkel\_usdSkel.vcxproj">
+      <Project>{192A98EE-3326-30DC-913F-7F6CC79D5B76}</Project>
+      <Name>_usdSkel</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdSkel\_usdSkel_pythonfiles.vcxproj">
+      <Project>{8BCA57B3-9EB5-3B6E-8F4F-6A5D4770E345}</Project>
+      <Name>_usdSkel_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdUI\_usdUI.vcxproj">
+      <Project>{2411A8D7-A063-332A-90BD-203965BCA46D}</Project>
+      <Name>_usdUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdUI\_usdUI_pythonfiles.vcxproj">
+      <Project>{20374E39-8DC2-3651-AEAF-23E90824081B}</Project>
+      <Name>_usdUI_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdUtils\_usdUtils.vcxproj">
+      <Project>{054C45EA-1A35-3263-8FAC-419C2436ACD7}</Project>
+      <Name>_usdUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdUtils\_usdUtils_pythonfiles.vcxproj">
+      <Project>{425DED60-8457-35A4-AA45-F377CA666EE0}</Project>
+      <Name>_usdUtils_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdVol\_usdVol.vcxproj">
+      <Project>{D9E388B5-F093-3E8B-BB4B-9804C2197A00}</Project>
+      <Name>_usdVol</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usdVol\_usdVol_pythonfiles.vcxproj">
+      <Project>{A6E6F815-2E03-3A94-BB9D-A54413E9CDEE}</Project>
+      <Name>_usdVol_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usd\_usd_pythonfiles.vcxproj">
+      <Project>{26D65DE2-C617-3C3E-A483-1EFF6060835E}</Project>
+      <Name>_usd_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\usdviewq\_usdviewq.vcxproj">
+      <Project>{F269A433-B785-3F23-8E80-6314ECFB10FD}</Project>
+      <Name>_usdviewq</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\usdviewq\_usdviewq_pythonfiles.vcxproj">
+      <Project>{6387D53B-D947-3C0F-AB29-14772FFB6BB2}</Project>
+      <Name>_usdviewq_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\vt\_vt.vcxproj">
+      <Project>{BCDE4E8E-F8B6-35C4-9B1F-980724942E3E}</Project>
+      <Name>_vt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\vt\_vt_pythonfiles.vcxproj">
+      <Project>{61822763-16F1-3314-A197-FB87C31931AA}</Project>
+      <Name>_vt_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\work\_work.vcxproj">
+      <Project>{6F2B75ED-76A3-3EB7-B7B4-093097DDB15F}</Project>
+      <Name>_work</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\work\_work_pythonfiles.vcxproj">
+      <Project>{C20B722D-A128-360F-843B-8E27B2357F2A}</Project>
+      <Name>_work_pythonfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hd\hdGenSchema_script.vcxproj">
+      <Project>{3F2637DC-0129-31DA-8B79-7F5942C7D9A1}</Project>
+      <Name>hdGenSchema_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\tf\testTfPyDllLinkModule.vcxproj">
+      <Project>{2B5E6E1E-A142-3739-B029-508D4447D2AF}</Project>
+      <Name>testTfPyDllLinkModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\bin\testusdview\testusdview_script.vcxproj">
+      <Project>{BFA8884E-0E23-354D-96B7-9A9ED0CE70F5}</Project>
+      <Name>testusdview_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\usd\usdGenSchema_script.vcxproj">
+      <Project>{8BAF7447-96F5-3015-B19A-3630DD35AFC5}</Project>
+      <Name>usdGenSchema_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\extras\usd\examples\usdMakeFileVariantModelAsset\usdMakeFileVariantModelAsset_script.vcxproj">
+      <Project>{22A4079B-84E3-38A5-AF9A-5DA0F662EE00}</Project>
+      <Name>usdMakeFileVariantModelAsset_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usdchecker\usdchecker_script.vcxproj">
+      <Project>{8E8360C9-893D-3A44-AF07-3660C4F5BE8E}</Project>
+      <Name>usdchecker_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usddiff\usddiff_script.vcxproj">
+      <Project>{5604DE93-D90A-3623-9615-6F780BDD2BDF}</Project>
+      <Name>usddiff_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usddumpcrate\usddumpcrate_script.vcxproj">
+      <Project>{9C5253C7-35EA-31B0-B5F5-7DF1B8D01A0A}</Project>
+      <Name>usddumpcrate_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usdedit\usdedit_script.vcxproj">
+      <Project>{3509B4B5-E384-3E71-B525-16BBC2C0A209}</Project>
+      <Name>usdedit_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usdfixbrokenpixarschemas\usdfixbrokenpixarschemas_script.vcxproj">
+      <Project>{ED482BA3-6E93-3576-976B-5F9C58F90173}</Project>
+      <Name>usdfixbrokenpixarschemas_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usdgenschemafromsdr\usdgenschemafromsdr_script.vcxproj">
+      <Project>{4244C8D8-C14C-3DE6-B0D0-B7CEBFE86150}</Project>
+      <Name>usdgenschemafromsdr_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\bin\usdrecord\usdrecord_script.vcxproj">
+      <Project>{4A58367C-D57E-3284-8427-03788F1DD0D6}</Project>
+      <Name>usdrecord_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usdresolve\usdresolve_script.vcxproj">
+      <Project>{3F806770-F0CE-39CF-9201-7F4C3BA1ABC5}</Project>
+      <Name>usdresolve_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usdstitch\usdstitch_script.vcxproj">
+      <Project>{5FF0C680-286C-3597-9178-AC30DE3C2A57}</Project>
+      <Name>usdstitch_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usdstitchclips\usdstitchclips_script.vcxproj">
+      <Project>{B16E9EE0-6731-37AE-9693-EE406367ECA8}</Project>
+      <Name>usdstitchclips_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usdImaging\bin\usdview\usdview_script.vcxproj">
+      <Project>{1EB5F241-D5A7-3263-A410-31C32E781024}</Project>
+      <Name>usdview_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\bin\usdzip\usdzip_script.vcxproj">
+      <Project>{8167B549-77F1-33A8-9007-857AAE5AB128}</Project>
+      <Name>usdzip_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

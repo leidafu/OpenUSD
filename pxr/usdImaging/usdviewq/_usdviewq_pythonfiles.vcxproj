@@ -1,0 +1,2415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6387D53B-D947-3C0F-AB29-14772FFB6BB2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>_usdviewq_pythonfiles</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\usdImaging\usdviewq;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\usdImaging\usdviewq;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\usdImaging\usdviewq;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\usdImaging\usdviewq;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\__init__.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating __init__.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\__init__.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating __init__.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\__init__.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating __init__.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\__init__.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating __init__.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/__init__.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\__init__.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\adjustDefaultMaterial.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating adjustDefaultMaterial.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustDefaultMaterial.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating adjustDefaultMaterial.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustDefaultMaterial.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating adjustDefaultMaterial.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustDefaultMaterial.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating adjustDefaultMaterial.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustDefaultMaterial.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustDefaultMaterial.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\adjustFreeCamera.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating adjustFreeCamera.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustFreeCamera.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating adjustFreeCamera.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustFreeCamera.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating adjustFreeCamera.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustFreeCamera.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating adjustFreeCamera.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/adjustFreeCamera.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustFreeCamera.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\appController.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating appController.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\appController.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating appController.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\appController.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating appController.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\appController.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating appController.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appController.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\appController.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\appEventFilter.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating appEventFilter.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\appEventFilter.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating appEventFilter.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\appEventFilter.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating appEventFilter.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\appEventFilter.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating appEventFilter.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/appEventFilter.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\appEventFilter.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\arrayAttributeView.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating arrayAttributeView.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\arrayAttributeView.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating arrayAttributeView.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\arrayAttributeView.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating arrayAttributeView.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\arrayAttributeView.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating arrayAttributeView.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/arrayAttributeView.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\arrayAttributeView.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\attributeValueEditor.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating attributeValueEditor.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeValueEditor.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating attributeValueEditor.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeValueEditor.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating attributeValueEditor.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeValueEditor.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating attributeValueEditor.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeValueEditor.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeValueEditor.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\attributeViewContextMenu.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating attributeViewContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeViewContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating attributeViewContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeViewContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating attributeViewContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeViewContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating attributeViewContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/attributeViewContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeViewContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\common.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating common.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\common.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating common.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\common.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating common.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\common.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating common.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/common.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\common.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\configController.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating configController.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\configController.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating configController.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\configController.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating configController.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\configController.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating configController.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/configController.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\configController.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\customAttributes.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating customAttributes.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\customAttributes.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating customAttributes.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\customAttributes.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating customAttributes.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\customAttributes.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating customAttributes.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/customAttributes.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\customAttributes.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\debugFlagsWidget.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating debugFlagsWidget.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\debugFlagsWidget.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating debugFlagsWidget.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\debugFlagsWidget.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating debugFlagsWidget.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\debugFlagsWidget.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating debugFlagsWidget.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/debugFlagsWidget.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\debugFlagsWidget.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\frameSlider.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating frameSlider.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\frameSlider.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating frameSlider.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\frameSlider.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating frameSlider.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\frameSlider.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating frameSlider.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/frameSlider.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\frameSlider.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\freeCamera.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating freeCamera.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\freeCamera.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating freeCamera.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\freeCamera.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating freeCamera.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\freeCamera.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating freeCamera.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/freeCamera.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\freeCamera.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\headerContextMenu.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating headerContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\headerContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating headerContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\headerContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating headerContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\headerContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating headerContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/headerContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\headerContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\hydraSceneBrowser.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hydraSceneBrowser.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\hydraSceneBrowser.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hydraSceneBrowser.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\hydraSceneBrowser.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hydraSceneBrowser.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\hydraSceneBrowser.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hydraSceneBrowser.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/hydraSceneBrowser.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\hydraSceneBrowser.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\layerStackContextMenu.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating layerStackContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\layerStackContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating layerStackContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\layerStackContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating layerStackContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\layerStackContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating layerStackContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/layerStackContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\layerStackContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\legendUtil.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating legendUtil.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\legendUtil.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating legendUtil.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\legendUtil.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating legendUtil.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\legendUtil.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating legendUtil.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/legendUtil.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\legendUtil.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\overridableLineEdit.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating overridableLineEdit.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\overridableLineEdit.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating overridableLineEdit.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\overridableLineEdit.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating overridableLineEdit.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\overridableLineEdit.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating overridableLineEdit.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/overridableLineEdit.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\overridableLineEdit.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\plugin.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating plugin.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\plugin.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating plugin.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\plugin.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating plugin.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\plugin.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating plugin.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/plugin.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\plugin.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\preferences.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating preferences.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\preferences.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating preferences.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\preferences.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating preferences.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\preferences.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating preferences.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/preferences.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\preferences.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\prettyPrint.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating prettyPrint.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\prettyPrint.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating prettyPrint.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\prettyPrint.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating prettyPrint.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\prettyPrint.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating prettyPrint.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/prettyPrint.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\prettyPrint.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\primContextMenu.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating primContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating primContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating primContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating primContextMenu.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenu.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenu.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\primContextMenuItems.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating primContextMenuItems.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenuItems.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating primContextMenuItems.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenuItems.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating primContextMenuItems.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenuItems.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating primContextMenuItems.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primContextMenuItems.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenuItems.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\primLegend.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating primLegend.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primLegend.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating primLegend.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primLegend.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating primLegend.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primLegend.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating primLegend.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primLegend.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primLegend.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\primTreeWidget.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating primTreeWidget.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primTreeWidget.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating primTreeWidget.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primTreeWidget.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating primTreeWidget.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primTreeWidget.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating primTreeWidget.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primTreeWidget.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primTreeWidget.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\primViewItem.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating primViewItem.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primViewItem.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating primViewItem.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primViewItem.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating primViewItem.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primViewItem.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating primViewItem.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/primViewItem.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\primViewItem.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\propertyLegend.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating propertyLegend.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\propertyLegend.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating propertyLegend.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\propertyLegend.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating propertyLegend.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\propertyLegend.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating propertyLegend.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/propertyLegend.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\propertyLegend.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\pythonInterpreter.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating pythonInterpreter.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\pythonInterpreter.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating pythonInterpreter.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\pythonInterpreter.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pythonInterpreter.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\pythonInterpreter.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pythonInterpreter.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/pythonInterpreter.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\pythonInterpreter.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\qt.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qt.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\qt.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qt.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\qt.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qt.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\qt.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qt.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/qt.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\qt.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\rootDataModel.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating rootDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\rootDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating rootDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\rootDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating rootDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\rootDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating rootDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/rootDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\rootDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\scalarTypes.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating scalarTypes.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\scalarTypes.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating scalarTypes.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\scalarTypes.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating scalarTypes.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\scalarTypes.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating scalarTypes.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/scalarTypes.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\scalarTypes.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\selectionDataModel.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating selectionDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\selectionDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating selectionDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\selectionDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating selectionDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\selectionDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating selectionDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/selectionDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\selectionDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\settings.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating settings.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\settings.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating settings.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\settings.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating settings.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\settings.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating settings.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/settings.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\settings.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\stageView.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating stageView.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\stageView.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating stageView.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\stageView.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating stageView.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\stageView.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating stageView.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/stageView.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\stageView.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\usdviewApi.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating usdviewApi.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewApi.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating usdviewApi.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewApi.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating usdviewApi.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewApi.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating usdviewApi.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewApi.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewApi.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\usdviewContextMenuItem.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating usdviewContextMenuItem.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewContextMenuItem.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating usdviewContextMenuItem.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewContextMenuItem.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating usdviewContextMenuItem.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewContextMenuItem.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating usdviewContextMenuItem.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/usdviewContextMenuItem.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewContextMenuItem.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\variantComboBox.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating variantComboBox.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\variantComboBox.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating variantComboBox.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\variantComboBox.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating variantComboBox.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\variantComboBox.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating variantComboBox.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/variantComboBox.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\variantComboBox.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\35a11568c33bf5be188fbd7e071baac7\viewSettingsDataModel.pyc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating viewSettingsDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\viewSettingsDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating viewSettingsDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\viewSettingsDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating viewSettingsDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\viewSettingsDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating viewSettingsDataModel.pyc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python312\python.exe D:/work/OpenUSD/cmake/macros/compilePython.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.py D:/work/OpenUSD/pxr/usdImaging/usdviewq/viewSettingsDataModel.pyc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\viewSettingsDataModel.pyc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\ebf672ddea61a3e9cf45f609f9b820ba\_usdviewq_pythonfiles.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\__init__.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\appEventFilter.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\arrayAttributeView.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\customAttributes.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\frameSlider.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\appController.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewApi.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\plugin.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\scalarTypes.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\stageView.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewContextMenuItem.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenuItems.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\headerContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeViewContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\layerStackContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\prettyPrint.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\pythonInterpreter.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\settings.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustDefaultMaterial.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustFreeCamera.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\preferences.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primViewItem.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\common.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\hydraSceneBrowser.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\legendUtil.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primLegend.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primTreeWidget.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\propertyLegend.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeValueEditor.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\overridableLineEdit.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\variantComboBox.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\qt.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\rootDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\selectionDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\viewSettingsDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\freeCamera.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\debugFlagsWidget.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\configController.pyc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\_usdviewq_pythonfiles</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\__init__.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\appEventFilter.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\arrayAttributeView.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\customAttributes.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\frameSlider.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\appController.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewApi.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\plugin.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\scalarTypes.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\stageView.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewContextMenuItem.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenuItems.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\headerContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeViewContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\layerStackContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\prettyPrint.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\pythonInterpreter.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\settings.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustDefaultMaterial.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustFreeCamera.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\preferences.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primViewItem.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\common.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\hydraSceneBrowser.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\legendUtil.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primLegend.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primTreeWidget.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\propertyLegend.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeValueEditor.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\overridableLineEdit.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\variantComboBox.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\qt.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\rootDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\selectionDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\viewSettingsDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\freeCamera.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\debugFlagsWidget.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\configController.pyc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\_usdviewq_pythonfiles</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\__init__.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\appEventFilter.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\arrayAttributeView.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\customAttributes.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\frameSlider.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\appController.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewApi.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\plugin.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\scalarTypes.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\stageView.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewContextMenuItem.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenuItems.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\headerContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeViewContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\layerStackContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\prettyPrint.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\pythonInterpreter.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\settings.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustDefaultMaterial.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustFreeCamera.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\preferences.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primViewItem.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\common.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\hydraSceneBrowser.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\legendUtil.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primLegend.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primTreeWidget.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\propertyLegend.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeValueEditor.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\overridableLineEdit.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\variantComboBox.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\qt.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\rootDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\selectionDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\viewSettingsDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\freeCamera.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\debugFlagsWidget.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\configController.pyc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\_usdviewq_pythonfiles</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\__init__.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\appEventFilter.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\arrayAttributeView.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\customAttributes.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\frameSlider.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\appController.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewApi.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\plugin.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\scalarTypes.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\stageView.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\usdviewContextMenuItem.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primContextMenuItems.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\headerContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeViewContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\layerStackContextMenu.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\prettyPrint.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\pythonInterpreter.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\settings.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustDefaultMaterial.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\adjustFreeCamera.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\preferences.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primViewItem.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\common.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\hydraSceneBrowser.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\legendUtil.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primLegend.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\primTreeWidget.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\propertyLegend.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\attributeValueEditor.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\overridableLineEdit.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\variantComboBox.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\qt.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\rootDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\selectionDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\viewSettingsDataModel.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\freeCamera.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\debugFlagsWidget.pyc;D:\work\OpenUSD\pxr\usdImaging\usdviewq\configController.pyc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\_usdviewq_pythonfiles</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/OpenUSD/pxr/usdImaging/usdviewq/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/usdImaging/usdviewq/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/OpenUSD/pxr/usdImaging/usdviewq/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/usdImaging/usdviewq/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/OpenUSD/pxr/usdImaging/usdviewq/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/usdImaging/usdviewq/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/OpenUSD/pxr/usdImaging/usdviewq/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/usdImaging/usdviewq/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\work\OpenUSD\pxr\usdImaging\usdviewq\CMakeFiles\_usdviewq_pythonfiles">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\OpenUSD\ZERO_CHECK.vcxproj">
+      <Project>{21BAA334-A16E-3B3B-BF20-00913A618B9B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

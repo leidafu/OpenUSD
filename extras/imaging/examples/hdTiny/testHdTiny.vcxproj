@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{104A6026-9690-3405-BDF7-872384770FF7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>testHdTiny</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">testHdTiny.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">testHdTiny</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">testHdTiny.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">testHdTiny</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">testHdTiny.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">testHdTiny</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">testHdTiny.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">testHdTiny</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/oneapi-tbb-2021.13.0/include" /external:I "C:/local/boost_1_86_0" /external:I "C:/Python312/include" /external:I "C:/Program Files/OpenSubdiv/include" /Zc:strictStrings /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4003;4244;4305;4267;4506;4091;4273;4180;4334</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;C:\oneapi-tbb-2021.13.0\include;C:\local\boost_1_86_0;C:\Python312\include;C:\Program Files\OpenSubdiv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;C:\oneapi-tbb-2021.13.0\include;C:\local\boost_1_86_0;C:\Python312\include;C:\Program Files\OpenSubdiv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\pxr\imaging\hdx\Debug\usd_hdx.lib;..\..\..\..\pxr\imaging\hdSt\Debug\usd_hdSt.lib;..\..\..\..\pxr\imaging\glf\Debug\usd_glf.lib;..\..\..\..\pxr\imaging\hdsi\Debug\usd_hdsi.lib;..\..\..\..\pxr\imaging\hd\Debug\usd_hd.lib;..\..\..\..\pxr\usd\sdr\Debug\usd_sdr.lib;..\..\..\..\pxr\usd\ndr\Debug\usd_ndr.lib;..\..\..\..\pxr\imaging\geomUtil\Debug\usd_geomUtil.lib;..\..\..\..\pxr\imaging\pxOsd\Debug\usd_pxOsd.lib;C:\Program Files\OpenSubdiv\lib\osdCPU.lib;..\..\..\..\pxr\imaging\hgiGL\Debug\usd_hgiGL.lib;C:\Program Files\OpenSubdiv\lib\osdGPU.lib;..\..\..\..\pxr\imaging\hgiInterop\Debug\usd_hgiInterop.lib;..\..\..\..\pxr\imaging\garch\Debug\usd_garch.lib;opengl32.lib;..\..\..\..\pxr\imaging\hgi\Debug\usd_hgi.lib;..\..\..\..\pxr\imaging\hio\Debug\usd_hio.lib;..\..\..\..\pxr\imaging\hf\Debug\usd_hf.lib;..\..\..\..\pxr\imaging\cameraUtil\Debug\usd_cameraUtil.lib;..\..\..\..\pxr\usd\sdf\Debug\usd_sdf.lib;..\..\..\..\pxr\usd\ar\Debug\usd_ar.lib;..\..\..\..\pxr\base\plug\Debug\usd_plug.lib;..\..\..\..\pxr\base\work\Debug\usd_work.lib;..\..\..\..\pxr\base\vt\Debug\usd_vt.lib;..\..\..\..\pxr\base\gf\Debug\usd_gf.lib;..\..\..\..\pxr\base\trace\Debug\usd_trace.lib;..\..\..\..\pxr\base\js\Debug\usd_js.lib;..\..\..\..\pxr\base\tf\Debug\usd_tf.lib;Shlwapi.lib;C:\Python312\libs\python312.lib;C:\local\boost_1_86_0\lib64-msvc-14.2\boost_python312-vc142-mt-gd-x64-1_86.lib;C:\oneapi-tbb-2021.13.0\lib\intel64\vc14\tbb12_debug.lib;..\..\..\..\pxr\base\pegtl\Debug\usd_pegtl.lib;..\..\..\..\pxr\base\arch\Debug\usd_arch.lib;Ws2_32.lib;Dbghelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/OpenUSD/extras/imaging/examples/hdTiny/Debug/testHdTiny.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/OpenUSD/extras/imaging/examples/hdTiny/Debug/testHdTiny.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/oneapi-tbb-2021.13.0/include" /external:I "C:/local/boost_1_86_0" /external:I "C:/Python312/include" /external:I "C:/Program Files/OpenSubdiv/include" /Zc:strictStrings /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4003;4244;4305;4267;4506;4091;4273;4180;4334</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;C:\oneapi-tbb-2021.13.0\include;C:\local\boost_1_86_0;C:\Python312\include;C:\Program Files\OpenSubdiv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;C:\oneapi-tbb-2021.13.0\include;C:\local\boost_1_86_0;C:\Python312\include;C:\Program Files\OpenSubdiv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\pxr\imaging\hdx\Release\usd_hdx.lib;..\..\..\..\pxr\imaging\hdSt\Release\usd_hdSt.lib;..\..\..\..\pxr\imaging\glf\Release\usd_glf.lib;..\..\..\..\pxr\imaging\hdsi\Release\usd_hdsi.lib;..\..\..\..\pxr\imaging\hd\Release\usd_hd.lib;..\..\..\..\pxr\usd\sdr\Release\usd_sdr.lib;..\..\..\..\pxr\usd\ndr\Release\usd_ndr.lib;..\..\..\..\pxr\imaging\geomUtil\Release\usd_geomUtil.lib;..\..\..\..\pxr\imaging\pxOsd\Release\usd_pxOsd.lib;C:\Program Files\OpenSubdiv\lib\osdCPU.lib;..\..\..\..\pxr\imaging\hgiGL\Release\usd_hgiGL.lib;C:\Program Files\OpenSubdiv\lib\osdGPU.lib;..\..\..\..\pxr\imaging\hgiInterop\Release\usd_hgiInterop.lib;..\..\..\..\pxr\imaging\garch\Release\usd_garch.lib;opengl32.lib;..\..\..\..\pxr\imaging\hgi\Release\usd_hgi.lib;..\..\..\..\pxr\imaging\hio\Release\usd_hio.lib;..\..\..\..\pxr\imaging\hf\Release\usd_hf.lib;..\..\..\..\pxr\imaging\cameraUtil\Release\usd_cameraUtil.lib;..\..\..\..\pxr\usd\sdf\Release\usd_sdf.lib;..\..\..\..\pxr\usd\ar\Release\usd_ar.lib;..\..\..\..\pxr\base\plug\Release\usd_plug.lib;..\..\..\..\pxr\base\work\Release\usd_work.lib;..\..\..\..\pxr\base\vt\Release\usd_vt.lib;..\..\..\..\pxr\base\gf\Release\usd_gf.lib;..\..\..\..\pxr\base\trace\Release\usd_trace.lib;..\..\..\..\pxr\base\js\Release\usd_js.lib;..\..\..\..\pxr\base\tf\Release\usd_tf.lib;Shlwapi.lib;C:\Python312\libs\python312.lib;C:\local\boost_1_86_0\lib64-msvc-14.2\boost_python312-vc142-mt-x64-1_86.lib;C:\oneapi-tbb-2021.13.0\lib\intel64\vc14\tbb12_debug.lib;..\..\..\..\pxr\base\pegtl\Release\usd_pegtl.lib;..\..\..\..\pxr\base\arch\Release\usd_arch.lib;Ws2_32.lib;Dbghelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/OpenUSD/extras/imaging/examples/hdTiny/Release/testHdTiny.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/OpenUSD/extras/imaging/examples/hdTiny/Release/testHdTiny.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/oneapi-tbb-2021.13.0/include" /external:I "C:/local/boost_1_86_0" /external:I "C:/Python312/include" /external:I "C:/Program Files/OpenSubdiv/include" /Zc:strictStrings /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4003;4244;4305;4267;4506;4091;4273;4180;4334</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;C:\oneapi-tbb-2021.13.0\include;C:\local\boost_1_86_0;C:\Python312\include;C:\Program Files\OpenSubdiv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;C:\oneapi-tbb-2021.13.0\include;C:\local\boost_1_86_0;C:\Python312\include;C:\Program Files\OpenSubdiv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\pxr\imaging\hdx\MinSizeRel\usd_hdx.lib;..\..\..\..\pxr\imaging\hdSt\MinSizeRel\usd_hdSt.lib;..\..\..\..\pxr\imaging\glf\MinSizeRel\usd_glf.lib;..\..\..\..\pxr\imaging\hdsi\MinSizeRel\usd_hdsi.lib;..\..\..\..\pxr\imaging\hd\MinSizeRel\usd_hd.lib;..\..\..\..\pxr\usd\sdr\MinSizeRel\usd_sdr.lib;..\..\..\..\pxr\usd\ndr\MinSizeRel\usd_ndr.lib;..\..\..\..\pxr\imaging\geomUtil\MinSizeRel\usd_geomUtil.lib;..\..\..\..\pxr\imaging\pxOsd\MinSizeRel\usd_pxOsd.lib;C:\Program Files\OpenSubdiv\lib\osdCPU.lib;..\..\..\..\pxr\imaging\hgiGL\MinSizeRel\usd_hgiGL.lib;C:\Program Files\OpenSubdiv\lib\osdGPU.lib;..\..\..\..\pxr\imaging\hgiInterop\MinSizeRel\usd_hgiInterop.lib;..\..\..\..\pxr\imaging\garch\MinSizeRel\usd_garch.lib;opengl32.lib;..\..\..\..\pxr\imaging\hgi\MinSizeRel\usd_hgi.lib;..\..\..\..\pxr\imaging\hio\MinSizeRel\usd_hio.lib;..\..\..\..\pxr\imaging\hf\MinSizeRel\usd_hf.lib;..\..\..\..\pxr\imaging\cameraUtil\MinSizeRel\usd_cameraUtil.lib;..\..\..\..\pxr\usd\sdf\MinSizeRel\usd_sdf.lib;..\..\..\..\pxr\usd\ar\MinSizeRel\usd_ar.lib;..\..\..\..\pxr\base\plug\MinSizeRel\usd_plug.lib;..\..\..\..\pxr\base\work\MinSizeRel\usd_work.lib;..\..\..\..\pxr\base\vt\MinSizeRel\usd_vt.lib;..\..\..\..\pxr\base\gf\MinSizeRel\usd_gf.lib;..\..\..\..\pxr\base\trace\MinSizeRel\usd_trace.lib;..\..\..\..\pxr\base\js\MinSizeRel\usd_js.lib;..\..\..\..\pxr\base\tf\MinSizeRel\usd_tf.lib;Shlwapi.lib;C:\Python312\libs\python312.lib;C:\local\boost_1_86_0\lib64-msvc-14.2\boost_python312-vc142-mt-x64-1_86.lib;C:\oneapi-tbb-2021.13.0\lib\intel64\vc14\tbb12_debug.lib;..\..\..\..\pxr\base\pegtl\MinSizeRel\usd_pegtl.lib;..\..\..\..\pxr\base\arch\MinSizeRel\usd_arch.lib;Ws2_32.lib;Dbghelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/OpenUSD/extras/imaging/examples/hdTiny/MinSizeRel/testHdTiny.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/OpenUSD/extras/imaging/examples/hdTiny/MinSizeRel/testHdTiny.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/oneapi-tbb-2021.13.0/include" /external:I "C:/local/boost_1_86_0" /external:I "C:/Python312/include" /external:I "C:/Program Files/OpenSubdiv/include" /Zc:strictStrings /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4003;4244;4305;4267;4506;4091;4273;4180;4334</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;C:\oneapi-tbb-2021.13.0\include;C:\local\boost_1_86_0;C:\Python312\include;C:\Program Files\OpenSubdiv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\extras\imaging\examples\hdTiny;D:\work\OpenUSD\include;D:\work\OpenUSD\share\usd\examples\include;C:\oneapi-tbb-2021.13.0\include;C:\local\boost_1_86_0;C:\Python312\include;C:\Program Files\OpenSubdiv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\pxr\imaging\hdx\RelWithDebInfo\usd_hdx.lib;..\..\..\..\pxr\imaging\hdSt\RelWithDebInfo\usd_hdSt.lib;..\..\..\..\pxr\imaging\glf\RelWithDebInfo\usd_glf.lib;..\..\..\..\pxr\imaging\hdsi\RelWithDebInfo\usd_hdsi.lib;..\..\..\..\pxr\imaging\hd\RelWithDebInfo\usd_hd.lib;..\..\..\..\pxr\usd\sdr\RelWithDebInfo\usd_sdr.lib;..\..\..\..\pxr\usd\ndr\RelWithDebInfo\usd_ndr.lib;..\..\..\..\pxr\imaging\geomUtil\RelWithDebInfo\usd_geomUtil.lib;..\..\..\..\pxr\imaging\pxOsd\RelWithDebInfo\usd_pxOsd.lib;C:\Program Files\OpenSubdiv\lib\osdCPU.lib;..\..\..\..\pxr\imaging\hgiGL\RelWithDebInfo\usd_hgiGL.lib;C:\Program Files\OpenSubdiv\lib\osdGPU.lib;..\..\..\..\pxr\imaging\hgiInterop\RelWithDebInfo\usd_hgiInterop.lib;..\..\..\..\pxr\imaging\garch\RelWithDebInfo\usd_garch.lib;opengl32.lib;..\..\..\..\pxr\imaging\hgi\RelWithDebInfo\usd_hgi.lib;..\..\..\..\pxr\imaging\hio\RelWithDebInfo\usd_hio.lib;..\..\..\..\pxr\imaging\hf\RelWithDebInfo\usd_hf.lib;..\..\..\..\pxr\imaging\cameraUtil\RelWithDebInfo\usd_cameraUtil.lib;..\..\..\..\pxr\usd\sdf\RelWithDebInfo\usd_sdf.lib;..\..\..\..\pxr\usd\ar\RelWithDebInfo\usd_ar.lib;..\..\..\..\pxr\base\plug\RelWithDebInfo\usd_plug.lib;..\..\..\..\pxr\base\work\RelWithDebInfo\usd_work.lib;..\..\..\..\pxr\base\vt\RelWithDebInfo\usd_vt.lib;..\..\..\..\pxr\base\gf\RelWithDebInfo\usd_gf.lib;..\..\..\..\pxr\base\trace\RelWithDebInfo\usd_trace.lib;..\..\..\..\pxr\base\js\RelWithDebInfo\usd_js.lib;..\..\..\..\pxr\base\tf\RelWithDebInfo\usd_tf.lib;Shlwapi.lib;C:\Python312\libs\python312.lib;C:\local\boost_1_86_0\lib64-msvc-14.2\boost_python312-vc142-mt-x64-1_86.lib;C:\oneapi-tbb-2021.13.0\lib\intel64\vc14\tbb12_debug.lib;..\..\..\..\pxr\base\pegtl\RelWithDebInfo\usd_pegtl.lib;..\..\..\..\pxr\base\arch\RelWithDebInfo\usd_arch.lib;Ws2_32.lib;Dbghelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/OpenUSD/extras/imaging/examples/hdTiny/RelWithDebInfo/testHdTiny.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/OpenUSD/extras/imaging/examples/hdTiny/RelWithDebInfo/testHdTiny.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\extras\imaging\examples\hdTiny\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/OpenUSD/extras/imaging/examples/hdTiny/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/extras/imaging/examples/hdTiny/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\plugInfo.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/OpenUSD/extras/imaging/examples/hdTiny/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/extras/imaging/examples/hdTiny/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\plugInfo.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/OpenUSD/extras/imaging/examples/hdTiny/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/extras/imaging/examples/hdTiny/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\plugInfo.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/OpenUSD/extras/imaging/examples/hdTiny/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/extras/imaging/examples/hdTiny/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\plugInfo.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\extras\imaging\examples\hdTiny\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\OpenUSD\extras\imaging\examples\hdTiny\testenv\testHdTiny.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\OpenUSD\ZERO_CHECK.vcxproj">
+      <Project>{21BAA334-A16E-3B3B-BF20-00913A618B9B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\ar\ar.vcxproj">
+      <Project>{BD7DAB84-F5F4-3936-9761-16528F767C16}</Project>
+      <Name>ar</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\arch\arch.vcxproj">
+      <Project>{B329B9E1-BD21-3E73-A10E-3EF87645352E}</Project>
+      <Name>arch</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\cameraUtil\cameraUtil.vcxproj">
+      <Project>{D9095547-49B8-37AF-B5C6-A0C972F4B791}</Project>
+      <Name>cameraUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\garch\garch.vcxproj">
+      <Project>{93F7F994-007E-3A0A-8508-8AE2DD1F6B01}</Project>
+      <Name>garch</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\geomUtil\geomUtil.vcxproj">
+      <Project>{A2599833-76BD-3BAB-B98E-1C163E373B96}</Project>
+      <Name>geomUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\gf\gf.vcxproj">
+      <Project>{E9C33041-E098-3B53-8EE2-6A5E3D894090}</Project>
+      <Name>gf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\glf\glf.vcxproj">
+      <Project>{BCE91A48-96B7-3001-A403-FD0138A3776C}</Project>
+      <Name>glf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hd\hd.vcxproj">
+      <Project>{FBEA33C5-D3E5-397C-AA6D-A64673E7D635}</Project>
+      <Name>hd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hdSt\hdSt.vcxproj">
+      <Project>{77BBDBF8-D1C9-3A81-95C8-842926944B24}</Project>
+      <Name>hdSt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hdsi\hdsi.vcxproj">
+      <Project>{E7ED7DEC-2E30-3A55-B0B7-BED15A6A0FF0}</Project>
+      <Name>hdsi</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hdx\hdx.vcxproj">
+      <Project>{A47AE8B0-49DB-3650-BF1E-6AF7BB306147}</Project>
+      <Name>hdx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hf\hf.vcxproj">
+      <Project>{7EB10405-765C-3ADF-B853-22DD22ACBD21}</Project>
+      <Name>hf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hgi\hgi.vcxproj">
+      <Project>{19BFF971-E0D8-3FFC-A6ED-A9A05543236F}</Project>
+      <Name>hgi</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hgiGL\hgiGL.vcxproj">
+      <Project>{45E0C591-E5A3-3995-948A-F945A6C9C025}</Project>
+      <Name>hgiGL</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hgiInterop\hgiInterop.vcxproj">
+      <Project>{27B2903F-9850-36B4-85E3-44569DF2752D}</Project>
+      <Name>hgiInterop</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hio\hio.vcxproj">
+      <Project>{506ECCBE-0342-31C5-B185-A349F0580531}</Project>
+      <Name>hio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\js\js.vcxproj">
+      <Project>{B2AF1C18-19B1-314C-87D6-BAB83E4778F3}</Project>
+      <Name>js</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\ndr\ndr.vcxproj">
+      <Project>{3C45BF16-E829-3426-A35A-BF4A9C51E974}</Project>
+      <Name>ndr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\pegtl\pegtl.vcxproj">
+      <Project>{54239516-9F5D-35C5-8B0A-E56AEF3A4147}</Project>
+      <Name>pegtl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\plug\plug.vcxproj">
+      <Project>{EC82E3C9-6AA2-37A6-86BD-2B04022020B1}</Project>
+      <Name>plug</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\pxOsd\pxOsd.vcxproj">
+      <Project>{BDE09B9A-C626-319A-9976-E6F68AFA10D6}</Project>
+      <Name>pxOsd</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\sdf\sdf.vcxproj">
+      <Project>{0FA9BECE-83EE-3A60-8E29-AFF2273CFB1A}</Project>
+      <Name>sdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\sdr\sdr.vcxproj">
+      <Project>{DC00F5FA-2685-30E5-AFD5-3D829E7DDF8D}</Project>
+      <Name>sdr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\tf\tf.vcxproj">
+      <Project>{CEE74698-9F40-3342-859E-E120C852DF36}</Project>
+      <Name>tf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\trace\trace.vcxproj">
+      <Project>{1EAE14DD-8377-3D5F-98C5-263649642E4D}</Project>
+      <Name>trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\vt\vt.vcxproj">
+      <Project>{23EBE5B3-FD6C-30D7-B815-7DE7D6A9A521}</Project>
+      <Name>vt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\work\work.vcxproj">
+      <Project>{69ED5D57-7BD9-3E0F-8349-DF4578370989}</Project>
+      <Name>work</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

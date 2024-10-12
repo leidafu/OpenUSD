@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B16AED7-9C05-3AAE-9DA5-36DBC7B82809}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>hioAvif</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hioAvif.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hioAvif</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hioAvif.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hioAvif</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">hioAvif.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">hioAvif</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">hioAvif.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">hioAvif</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/local/boost_1_86_0" /external:I "C:/oneapi-tbb-2021.13.0/include" /external:I "C:/Python312/include" /Zc:strictStrings /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4003;4244;4305;4267;4506;4091;4273;4180;4334</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;MFB_PACKAGE_NAME=hioAvif;MFB_ALT_PACKAGE_NAME=hioAvif;MFB_PACKAGE_MODULE=HioAvif;PXR_BUILD_LOCATION=usd;PXR_PLUGIN_BUILD_LOCATION=../plugin/usd;HIOAVIF_EXPORTS=1;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR="Debug";hioAvif_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;MFB_PACKAGE_NAME=hioAvif;MFB_ALT_PACKAGE_NAME=hioAvif;MFB_PACKAGE_MODULE=HioAvif;PXR_BUILD_LOCATION=usd;PXR_PLUGIN_BUILD_LOCATION=../plugin/usd;HIOAVIF_EXPORTS=1;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR=\"Debug\";hioAvif_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;C:\local\boost_1_86_0;C:\oneapi-tbb-2021.13.0\include;C:\Python312\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;C:\local\boost_1_86_0;C:\oneapi-tbb-2021.13.0\include;C:\Python312\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\hio\Debug\usd_hio.lib;..\..\..\usd\ar\Debug\usd_ar.lib;..\..\..\base\vt\Debug\usd_vt.lib;..\..\..\base\gf\Debug\usd_gf.lib;..\..\hf\Debug\usd_hf.lib;..\..\..\base\plug\Debug\usd_plug.lib;..\..\..\base\work\Debug\usd_work.lib;..\..\..\base\trace\Debug\usd_trace.lib;..\..\..\base\js\Debug\usd_js.lib;..\..\..\base\tf\Debug\usd_tf.lib;..\..\..\base\arch\Debug\usd_arch.lib;Ws2_32.lib;Dbghelp.lib;Shlwapi.lib;C:\Python312\libs\python312.lib;C:\local\boost_1_86_0\lib64-msvc-14.2\boost_python312-vc142-mt-gd-x64-1_86.lib;C:\oneapi-tbb-2021.13.0\lib\intel64\vc14\tbb12_debug.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/Debug/hioAvif.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/Debug/hioAvif.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/local/boost_1_86_0" /external:I "C:/oneapi-tbb-2021.13.0/include" /external:I "C:/Python312/include" /Zc:strictStrings /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4003;4244;4305;4267;4506;4091;4273;4180;4334</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MFB_PACKAGE_NAME=hioAvif;MFB_ALT_PACKAGE_NAME=hioAvif;MFB_PACKAGE_MODULE=HioAvif;PXR_BUILD_LOCATION=usd;PXR_PLUGIN_BUILD_LOCATION=../plugin/usd;HIOAVIF_EXPORTS=1;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR="Release";hioAvif_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MFB_PACKAGE_NAME=hioAvif;MFB_ALT_PACKAGE_NAME=hioAvif;MFB_PACKAGE_MODULE=HioAvif;PXR_BUILD_LOCATION=usd;PXR_PLUGIN_BUILD_LOCATION=../plugin/usd;HIOAVIF_EXPORTS=1;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR=\"Release\";hioAvif_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;C:\local\boost_1_86_0;C:\oneapi-tbb-2021.13.0\include;C:\Python312\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;C:\local\boost_1_86_0;C:\oneapi-tbb-2021.13.0\include;C:\Python312\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\hio\Release\usd_hio.lib;..\..\..\usd\ar\Release\usd_ar.lib;..\..\..\base\vt\Release\usd_vt.lib;..\..\..\base\gf\Release\usd_gf.lib;..\..\hf\Release\usd_hf.lib;..\..\..\base\plug\Release\usd_plug.lib;..\..\..\base\work\Release\usd_work.lib;..\..\..\base\trace\Release\usd_trace.lib;..\..\..\base\js\Release\usd_js.lib;..\..\..\base\tf\Release\usd_tf.lib;..\..\..\base\arch\Release\usd_arch.lib;Ws2_32.lib;Dbghelp.lib;Shlwapi.lib;C:\Python312\libs\python312.lib;C:\local\boost_1_86_0\lib64-msvc-14.2\boost_python312-vc142-mt-x64-1_86.lib;C:\oneapi-tbb-2021.13.0\lib\intel64\vc14\tbb12_debug.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/Release/hioAvif.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/Release/hioAvif.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/local/boost_1_86_0" /external:I "C:/oneapi-tbb-2021.13.0/include" /external:I "C:/Python312/include" /Zc:strictStrings /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4003;4244;4305;4267;4506;4091;4273;4180;4334</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MFB_PACKAGE_NAME=hioAvif;MFB_ALT_PACKAGE_NAME=hioAvif;MFB_PACKAGE_MODULE=HioAvif;PXR_BUILD_LOCATION=usd;PXR_PLUGIN_BUILD_LOCATION=../plugin/usd;HIOAVIF_EXPORTS=1;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR="MinSizeRel";hioAvif_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MFB_PACKAGE_NAME=hioAvif;MFB_ALT_PACKAGE_NAME=hioAvif;MFB_PACKAGE_MODULE=HioAvif;PXR_BUILD_LOCATION=usd;PXR_PLUGIN_BUILD_LOCATION=../plugin/usd;HIOAVIF_EXPORTS=1;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR=\"MinSizeRel\";hioAvif_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;C:\local\boost_1_86_0;C:\oneapi-tbb-2021.13.0\include;C:\Python312\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;C:\local\boost_1_86_0;C:\oneapi-tbb-2021.13.0\include;C:\Python312\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\hio\MinSizeRel\usd_hio.lib;..\..\..\usd\ar\MinSizeRel\usd_ar.lib;..\..\..\base\vt\MinSizeRel\usd_vt.lib;..\..\..\base\gf\MinSizeRel\usd_gf.lib;..\..\hf\MinSizeRel\usd_hf.lib;..\..\..\base\plug\MinSizeRel\usd_plug.lib;..\..\..\base\work\MinSizeRel\usd_work.lib;..\..\..\base\trace\MinSizeRel\usd_trace.lib;..\..\..\base\js\MinSizeRel\usd_js.lib;..\..\..\base\tf\MinSizeRel\usd_tf.lib;..\..\..\base\arch\MinSizeRel\usd_arch.lib;Ws2_32.lib;Dbghelp.lib;Shlwapi.lib;C:\Python312\libs\python312.lib;C:\local\boost_1_86_0\lib64-msvc-14.2\boost_python312-vc142-mt-x64-1_86.lib;C:\oneapi-tbb-2021.13.0\lib\intel64\vc14\tbb12_debug.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/MinSizeRel/hioAvif.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/MinSizeRel/hioAvif.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/local/boost_1_86_0" /external:I "C:/oneapi-tbb-2021.13.0/include" /external:I "C:/Python312/include" /Zc:strictStrings /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4003;4244;4305;4267;4506;4091;4273;4180;4334</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MFB_PACKAGE_NAME=hioAvif;MFB_ALT_PACKAGE_NAME=hioAvif;MFB_PACKAGE_MODULE=HioAvif;PXR_BUILD_LOCATION=usd;PXR_PLUGIN_BUILD_LOCATION=../plugin/usd;HIOAVIF_EXPORTS=1;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR="RelWithDebInfo";hioAvif_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MFB_PACKAGE_NAME=hioAvif;MFB_ALT_PACKAGE_NAME=hioAvif;MFB_PACKAGE_MODULE=HioAvif;PXR_BUILD_LOCATION=usd;PXR_PLUGIN_BUILD_LOCATION=../plugin/usd;HIOAVIF_EXPORTS=1;TBB_USE_DEBUG=1;PXR_GL_SUPPORT_ENABLED;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;YY_NO_UNISTD_H;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;OPENEXR_DLL;WIN32_LEAN_AND_MEAN;GL_GLEXT_PROTOTYPES;GLX_GLXEXT_PROTOTYPES;BOOST_PYTHON_NO_PY_SIGNATURES;CMAKE_INTDIR=\"RelWithDebInfo\";hioAvif_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;C:\local\boost_1_86_0;C:\oneapi-tbb-2021.13.0\include;C:\Python312\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\OpenUSD\pxr\imaging\plugin\hioAvif;D:\work\OpenUSD\include;C:\local\boost_1_86_0;C:\oneapi-tbb-2021.13.0\include;C:\Python312\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\hio\RelWithDebInfo\usd_hio.lib;..\..\..\usd\ar\RelWithDebInfo\usd_ar.lib;..\..\..\base\vt\RelWithDebInfo\usd_vt.lib;..\..\..\base\gf\RelWithDebInfo\usd_gf.lib;..\..\hf\RelWithDebInfo\usd_hf.lib;..\..\..\base\plug\RelWithDebInfo\usd_plug.lib;..\..\..\base\work\RelWithDebInfo\usd_work.lib;..\..\..\base\trace\RelWithDebInfo\usd_trace.lib;..\..\..\base\js\RelWithDebInfo\usd_js.lib;..\..\..\base\tf\RelWithDebInfo\usd_tf.lib;..\..\..\base\arch\RelWithDebInfo\usd_arch.lib;Ws2_32.lib;Dbghelp.lib;Shlwapi.lib;C:\Python312\libs\python312.lib;C:\local\boost_1_86_0\lib64-msvc-14.2\boost_python312-vc142-mt-x64-1_86.lib;C:\oneapi-tbb-2021.13.0\lib\intel64\vc14\tbb12_debug.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/RelWithDebInfo/hioAvif.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/RelWithDebInfo/hioAvif.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\f8e2d35505ceeaa5158bc0353b6dd4ba\pch.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copying pch.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/pch.h D:/work/OpenUSD/include/pxr/imaging/hioAvif/pch.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\include\pxr\imaging\hioAvif\pch.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Copying pch.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/pch.h D:/work/OpenUSD/include/pxr/imaging/hioAvif/pch.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\include\pxr\imaging\hioAvif\pch.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Copying pch.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/pch.h D:/work/OpenUSD/include/pxr/imaging/hioAvif/pch.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\include\pxr\imaging\hioAvif\pch.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Copying pch.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/pch.h D:/work/OpenUSD/include/pxr/imaging/hioAvif/pch.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\include\pxr\imaging\hioAvif\pch.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\CMakeFiles\edf6d58902fabc76965ee126cecf9721\pch.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating pch.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/pch.cpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating pch.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/pch.cpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pch.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/pch.cpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pch.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/pch.cpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\plugInfo.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\plugInfo.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\plugInfo.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/OpenUSD -BD:/work/OpenUSD --check-stamp-file D:/work/OpenUSD/pxr/imaging/plugin/hioAvif/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\plugInfo.json;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_codec.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_decoder.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_image.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_integer.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\aom_convolve.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\aom_dsp_rtcd.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\binary_codes_reader.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\bitreader.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\bitreader_buffer.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\blend_a64_hmask.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\blend_a64_vmask.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\blend_a64_mask.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\entcode.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\entdec.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\grain_synthesis.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\intrapred.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_dsp\loopfilter.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_mem\aom_mem.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_scale\aom_scale_rtcd.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_scale\generic\aom_scale.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_scale\generic\gen_scalers.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_scale\generic\yv12config.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_scale\generic\yv12extend.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\aom_util\aom_thread.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\av1_dx_iface.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\alloccommon.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\av1_inv_txfm1d.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\av1_inv_txfm2d.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\av1_loopfilter.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\av1_txfm.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\av1_rtcd.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\blockd.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\cdef.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\cdef_block.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\cfl.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\convolve.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\entropymode.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\entropy.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\entropymv.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\frame_buffers.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\idct.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\mvref_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\obu_util.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\pred_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\quant_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\reconinter.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\reconintra.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\resize.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\restoration.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\av1_scale.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\scan.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\seg_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\thread_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\timing.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\txb_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\tile_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\common\warped_motion.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\decoder\decodeframe.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\decoder\decodemv.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\decoder\decoder.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\decoder\decodetxb.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\decoder\detokenize.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\aom\av1\decoder\obu.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\alpha.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\avif.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\codec_aom.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\colr.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\diag.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\exif.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\io.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\mem.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\avif_obu.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\rawdata.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\read.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\reformat.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\reformat_libsharpyuv.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\reformat_libyuv.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\avif-scale.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\stream.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\utils.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\write.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\src-libyuv\planar_functions.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\src-libyuv\row_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\src-libyuv\yuv_scale.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\src-libyuv\scale_any.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIF\src\src-libyuv\scale_common.c" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\AVIFImage.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pxr/imaging/hioAvif/pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pxr/imaging/hioAvif/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/work/OpenUSD/include/pxr/imaging/hioAvif/Release/pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pxr/imaging/hioAvif/pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pxr/imaging/hioAvif/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/work/OpenUSD/include/pxr/imaging/hioAvif/Release/pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pxr/imaging/hioAvif/pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pxr/imaging/hioAvif/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/work/OpenUSD/include/pxr/imaging/hioAvif/Release/pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pxr/imaging/hioAvif/pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pxr/imaging/hioAvif/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/work/OpenUSD/include/pxr/imaging/hioAvif/Release/pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="D:\work\OpenUSD\include\pxr\imaging\hioAvif\pch.h" />
+    <ClCompile Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\pch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pxr/imaging/hioAvif/pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pxr/imaging/hioAvif/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/work/OpenUSD/include/pxr/imaging/hioAvif/Release/pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pxr/imaging/hioAvif/pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pxr/imaging/hioAvif/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/work/OpenUSD/include/pxr/imaging/hioAvif/Release/pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pxr/imaging/hioAvif/pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pxr/imaging/hioAvif/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/work/OpenUSD/include/pxr/imaging/hioAvif/Release/pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pxr/imaging/hioAvif/pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pxr/imaging/hioAvif/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/work/OpenUSD/include/pxr/imaging/hioAvif/Release/pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\OpenUSD\ZERO_CHECK.vcxproj">
+      <Project>{21BAA334-A16E-3B3B-BF20-00913A618B9B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\usd\ar\ar.vcxproj">
+      <Project>{BD7DAB84-F5F4-3936-9761-16528F767C16}</Project>
+      <Name>ar</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\arch\arch.vcxproj">
+      <Project>{B329B9E1-BD21-3E73-A10E-3EF87645352E}</Project>
+      <Name>arch</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\gf\gf.vcxproj">
+      <Project>{E9C33041-E098-3B53-8EE2-6A5E3D894090}</Project>
+      <Name>gf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hf\hf.vcxproj">
+      <Project>{7EB10405-765C-3ADF-B853-22DD22ACBD21}</Project>
+      <Name>hf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\hio\hio.vcxproj">
+      <Project>{506ECCBE-0342-31C5-B185-A349F0580531}</Project>
+      <Name>hio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\imaging\plugin\hioAvif\hioAvif_headerfiles.vcxproj">
+      <Project>{A22BBB04-EE75-33D4-8269-F8CFD2986C68}</Project>
+      <Name>hioAvif_headerfiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\js\js.vcxproj">
+      <Project>{B2AF1C18-19B1-314C-87D6-BAB83E4778F3}</Project>
+      <Name>js</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\plug\plug.vcxproj">
+      <Project>{EC82E3C9-6AA2-37A6-86BD-2B04022020B1}</Project>
+      <Name>plug</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\tf\tf.vcxproj">
+      <Project>{CEE74698-9F40-3342-859E-E120C852DF36}</Project>
+      <Name>tf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\trace\trace.vcxproj">
+      <Project>{1EAE14DD-8377-3D5F-98C5-263649642E4D}</Project>
+      <Name>trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\vt\vt.vcxproj">
+      <Project>{23EBE5B3-FD6C-30D7-B815-7DE7D6A9A521}</Project>
+      <Name>vt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\OpenUSD\pxr\base\work\work.vcxproj">
+      <Project>{69ED5D57-7BD9-3E0F-8349-DF4578370989}</Project>
+      <Name>work</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

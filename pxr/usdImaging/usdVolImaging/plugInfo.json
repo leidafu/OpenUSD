@@ -19,10 +19,10 @@
                     }
                 }
             },
-            "LibraryPath": "@PLUG_INFO_LIBRARY_PATH@",
+            "LibraryPath": "../../usd_usdVolImaging.dll",
             "Name": "usdVolImaging",
-            "ResourcePath": "@PLUG_INFO_RESOURCE_PATH@",
-            "Root": "@PLUG_INFO_ROOT@",
+            "ResourcePath": "resources",
+            "Root": "..",
             "Type": "library"
         }
     ]
